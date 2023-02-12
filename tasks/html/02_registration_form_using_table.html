@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		body{
+			background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GuDQ78RHrZZaDSNKlxc91QfZMDJVffKvUA&usqp=CAU");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			font-family: cursive;
+			color: whitesmoke;
+		}
+		div{
+			height: 600px;
+			background: url("https://img.freepik.com/free-vector/colored-hacker-code-realistic-composition-with-person-creates-codes-hacking-stealing-information-vector-illustration_1284-18005.jpg");
+			background-size: contain;
+			background-size: 100% 100%;
+		}
+		input,select{
+			background-color: rgb(50, 48, 64);
+			color: whitesmoke;
+			width: 100%;
+			background: black;
+			border: 0px;
+			font-size: 15px;
+			font-family: cursive;
+		}
+		#submit{
+			background: green;
+			width: 100px;
+		}
+		#maintable{
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 80px;
+			height: 600px;
+		}
+		#birthdate{
+			background: ;
+		}
+
+	</style>
+</head>
+<body>
+	<table id="maintable" border="0px" cellpadding="0px" cellspacing="0px">
+		<tr>
+			<td class="maincol" width="400px" id="image">
+				<div></div>
+				
+			</td>
+			<td class="maincol" bgcolor="black" width="400px" height="600px">
+				<table border="0px" cellspacing="15px" cellpadding="3px">
+					<tr>
+						<td><h1><u>Registration Form</u></h1></td>
+					</tr>
+					<tr>
+						<td>
+							<input type="text" value="Name" required="">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Birthdate: <input id="birthdate" type="date" value="Birthdate">
+						</td>
+					</tr>
+					<tr>
+						<td><select>
+								<option hidden>Gender</option>
+								<option>Male</option>
+								<option>Female</option>
+							</select>
+					</tr>
+					<tr>
+						<td><input type="email" value="Email"></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Phone" required="" pattern="[0-9]+" title="10 digits only...!"></td>
+					</tr>
+					<tr>
+						<td><input type="submit" id="submit"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
+
+<!-- 
+	<h1>Registration Form</h1><br>
+<input type="text" name="" value="Name"><br><br>
+					Birthdate: <input type="date" id="date" value="Birthdate"><br><br>
+					<select>
+						<option hidden>Gender</option>
+						<option>Male</option>
+						<option>Female</option>
+					</select><br><br>
+					<input type="email" name="" value="Email"><br><br>
+					<input type="text" value="Phone" ="" required="" pattern="[0-9]+" title="10 digits only...!"><br><br>
+					<input type="submit" id="submit"> -->
