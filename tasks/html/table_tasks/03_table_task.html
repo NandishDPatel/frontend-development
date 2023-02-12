@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Task 03</title>
+    <style type="text/css">
+        #mainTable{
+            height: 750px;
+            width: 100%;
+            font-family: arial;
+        }
+        #col1{
+            background: whitesmoke;
+            width: 70%;
+            font-size: 15px;
+            font-weight: bold;
+
+        }
+        #col2{
+            
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ4regbJ4FML8x73ffQP71aaLZy0FILXgbYg&usqp=CAU");
+            background-size: 100% 100%;
+        }
+        #table2{
+            height: 400px;
+            width: 500px;
+            margin: auto;
+        }
+        input{
+            background-color: white;
+            border-radius: 3px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        #content{
+            color: lightgrey;
+            font-size: 12px;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+        }
+        #submit{
+            background: orange;
+            color: white;
+            padding: 5px 20px;
+            font-weight: 50%;
+            width: 100px;
+            border-radius: 5px;
+        }
+        h2{
+            margin: auto;
+        }
+       #terms{
+
+       }
+       
+    </style>
+</head>
+<body>
+    <table id="mainTable">
+        <tr>
+            <td id="col1">
+                <table id="table2" border="0px" cellspacing="10px">
+                    <tr>
+                       <td colspan="2" id="heading"><h2>Register</h2></td> 
+                    </tr>
+                    <tr>
+                        <td id="content" colspan="2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                       </td> 
+                    </tr>
+                    <tr>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                    </tr>
+                    <tr>
+                        <td><input style="input" value="e.g. John"></td>
+                        <td><input style="input" value="e.g. Smith"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Email Address</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input style="input" value="e.g. nanlogefs@gmail.com" width="100%"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number</td>
+                        <td>Website</td>
+                    </tr>
+                    <tr>
+                        <td><input style="input" value="+00 0000 0000"></td>
+                        <td><input style="input" value="e.g. https://google.com"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>Re-type Password</td>
+                    </tr>
+                    <td><input style="input" value="Your password"></td>
+                        <td><input style="input" value="Your password"></td>
+                    <tr>
+                        <td  colspan="2" id="terms"><input type="checkbox">I have read and understood the terms and conditions</td>
+                    </tr>
+                    <tr >
+                        <td><input type="submit" value="Register" id="submit"></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="col2">
+                <div></div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
