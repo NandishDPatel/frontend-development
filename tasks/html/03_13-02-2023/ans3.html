@@ -7,57 +7,110 @@
     <title>Form-3</title>
     <style>
         body{
-            background-color: aquamarine;
+            height: 100%;
+            background-color: black;
+            font-family:Arial, Helvetica, sans-serif;
+            color: white;
+            padding: 200px 300px;
+        }
+        #mainTable{
+            height: 500px;
+            width: 650px;
         }
         #table1{
+            height: 100%;
+            box-sizing: border-box;
+            width: 100%;
             padding: 10px 10px;
+            background: rgba(100, 95, 95, 0.473);
+           
+        }
+        #table2{
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to right,rgba(53, 102, 53, 0.20),rgb(13, 52, 48)), url("https://images.unsplash.com/photo-1614732484003-ef9881555dc3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+            background-size: 100% 100%;
+            box-sizing: border-box;
         }
         #symbol{
-            height: 50px;
-            /* background-image: url(""); */
+            height: 100px;
             width: 100%;
         }
+
+        #image{
+            height: 80px;
+            width: 80px;
+            margin: 10px auto;
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQISIE0TkNOhFhkh-nsWbToFbZmpVNcOOVfJA&usqp=CAU");
+            background-size: 100% 100%;
+        }
         #signUp{
-            padding-left: 55px;
+            padding-left: 100px;
             color: white;
         }
+        input{
+            height: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+            background: rgba(100, 95, 95, 0.473);
+            color: grey;
+            border-bottom: green solid 3px;
+        }
         input[type="submit"]{
+            height: 30px;
+            width: 50%;
             margin-left: 50px;
             padding: 3px 25px;
             color: white;
-            background-color: black;
+            background-color: ;
+            border: green solid 4px;
+            border-radius: 5px;
+        }
+        #mission{
+            box-sizing: border-box;
+            padding-left: 20px;
+            font-size: 25px;
+        }
+        #future{
+            box-sizing: border-box;
+            padding-left: 75px;
+        }
+        /*Hover Section*/
+        input[type="submit"]:hover{
+            color: greenyellow;
         }
     </style>
 </head>
 <body>
-    <table id="mainTable" border="2px">
+    <table id="mainTable" border="0px">
         <tr>
             <td>
-                <table id="table1" border="2px">
+                <table id="table1" border="0px">
                     <tr>
-                        <td>Mission to Deep Space</td>
+                        <td id="mission">Mission to Deep Space</td>
                     </tr>
                     <tr>
-                        <td><span id="symbol">Symbol</span></td>
+                        <td id="symbol"><div id="image"></div></td>
                     </tr>
                     <tr>
-                        <td>The Future is Here</td>
+                        <td id="future">The Future is Here</td>
                     </tr>
                 </table>
             </td>
-            <td>
-                <table cellspacing="20" id="table2" border="2px">
+            <td width="50%">
+                <table cellspacing="20" id="table2" border="0px">
                     <tr>
                         <td id="signUp">Sign Up</td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="" id=""></td>
+                        <td id="userB"><input type="text" placeholder="Username" class="input"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="" id=""></td>
+                        <td id="passB"><input type="text" placeholder="Password" class="input"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="" id=""></td>
+                        <td id="emB"><input type="text" placeholder="Email" class="input"></td>
                     </tr>
                     <tr>
                         <td><input type="submit" value="Join"></td>
@@ -68,4 +121,3 @@
     </table>
 </body>
 </html>
-<!-- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQSj90aKnUucIN2VJUfusfI2ghLOfRs4E-Cw&usqp=CAU -->
