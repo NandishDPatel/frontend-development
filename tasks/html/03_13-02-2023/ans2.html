@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-2</title>
+    <style>
+        body{
+            height:80vh;
+            width: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(rgba(121, 7, 226, 0.75),rgb(84, 84, 154)),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXjGbYKss-Kz6fYGfG3nfS8QepGT1Ba0od-A&usqp=CAU");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 100% 100%, 100% 100%;
+        }
+        #mainTable{
+            height: 400px;
+            width: 700px;
+            margin: 150px auto;
+        }
+        #table1{
+            width: 100%;
+            height: 100%;
+            background:  linear-gradient(rgba(149, 225, 255, 0.3),rgb(125, 125, 230)),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXjGbYKss-Kz6fYGfG3nfS8QepGT1Ba0od-A&usqp=CAU");
+            background-size: 100% 100%;
+            color: white;
+            padding: 30px 20px;
+        }
+        #table2{
+            width: 100%;
+            height: 100%;
+            padding: 30px 30px;
+            background: white;
+        }
+        #helloWorld{
+            letter-spacing: 5px;
+            font-size: 50px;
+            font-weight: 700;
+        }
+        #caption{
+            padding-top: 20px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        #facebook{
+            font-size: 12px;
+            padding-left: 20px;
+            width: 30%;
+        }
+        #facebook:hover{
+            color: aqua;
+        }
+        #twitter{
+            font-size: 12px;
+            padding-left: 20px;
+        }
+        #twitter:hover{
+            color: pink;
+        }
+        #info{
+            font-size: 10px;
+        }
+        #loginHeading{
+            font-size: 30px;
+            font-weight: 600;
+        }
+        #password{
+            
+            letter-spacing: 2px;
+            padding-left: 4px;
+            border: 0px;    
+            border-bottom: solid lightgrey 3px;
+            width: 270px;
+        }
+        #password:hover{
+            box-shadow: 0px 0px 5px black;
+            border-bottom: solid darkgrey 3px;
+        }
+        #forgotPassword{
+            color: lightgray;
+            font-size: 15px;
+        }
+        #forgotPassword:hover{
+            color: black;
+            font-size: 15px;
+        }
+        #login{
+            background: rgba(120, 211, 28, 0.729);
+            border: 0px;
+            color: rgba(250, 249, 249, 0.875);
+            box-shadow: 0px 0px 5px black;
+            border-radius: 20px;
+            width: 70px;
+            height: 30px;
+        }
+        #login:hover{
+            color: black;
+        }
+        #name{
+            border: 0px;    
+            border-bottom: solid lightgrey 3px;
+            width: 270px;
+        }
+        #name:hover{
+            box-shadow: 0px 0px 5px black;
+            border-bottom: solid darkgrey 3px;
+        }
+        #loginBox{
+            padding-left: 200px;
+        }
+        a:hover{
+            color: rgb(2, 2, 66);
+        }
+        input[type="checkbox"]{
+            color: white;
+            accent-color: greenyellow;
+            border: black solid 2px;
+        }
+    </style>
+</head>
+<body>
+    <table id="mainTable" cellspacing="0px" border="0px">
+        <tr>
+            <td>
+                <table id="table1" border="0px">
+                    <tr>
+                        <td id="helloWorld" colspan="2">Hello <br> World.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium reprehenderit dicta iure atque nulla </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="caption">Login with social media</td>
+                    </tr>
+                    <tr>
+                        <td id="facebook">Facebook</td>
+                        <td id="twitter">Twitter</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table  id="table2" border="0px">
+                    <tr>
+                        <td id="loginHeading" colspan="2">Login</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Dont have account? <a href="https://www.google.com/" target="_blank">Create your account,</a> it takes less than a minute</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" value="John Doe" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="password" value="123456" id="password"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="">Remember Me</td>
+                        <td id="forgotPassword">Forgot Password?</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="loginBox"><input type="submit" value="Login" id="login"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
