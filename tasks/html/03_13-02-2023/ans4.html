@@ -7,47 +7,99 @@
     <title>Form-4</title>
     <style>
         body{
-            height: 700px;
+            height: 80vh;
             width: 100%;
-            background: linear-gradient(to right,lightblue,purple);
+            background: linear-gradient(to right,rgb(168, 217, 220),purple);
             background-size: 100% 100%;
         }
         table{
-            margin-left: 50px;
+            height: 400px;
+            width: 500px;
             font-weight: 400;
             font-size: medium;
             color: black;
+            background: white;
+            padding: 20px;
+            margin: 200px auto;
         }
+        input{
+            height: 18px;
+            font-size: 15px;
+            color: black;
+            border: none;
+            border-bottom:  lightgrey solid 2px;
+        }
+        div{
+            color: green;
+            font-size: 14px;
+        }
+        #message{
+            width: 97%;
+            /* height: 30px; */
+        }
+        input[type="submit"]{
+            height: 25px;
+            width: 130px;
+            font-size: 13px;
+            color: white;
+            background: linear-gradient(to right,rgb(168, 217, 220),purple);
+        }
+        textarea{
+            height: 30px;
+            width: 97%;
+            resize: none;
+            border: none;
+            border-bottom: lightgrey solid 2px;
+        }
+        #heading{
+            text-align: center;
+            color: linear-gradient(to right,rgb(168, 217, 220),purple);
+        }
+        /*Hover effects*/
+        input[type=submit]:hover{
+            color: black;
+        }
+        
+        /*after clicking effects*/
+        /* #x::{
+            color: aqua;
+        } */
     </style>
 </head>
 <body>
-    <table border="2px">
+    <table cellspacing="1px" border="0px">
         <tr >
-            <td colspan="2"><h1>Responsive Contact US Form</h1></td>
+            <td id="heading" colspan="2"><h1>Responsive Contact US Form</h1></td>
         </tr>
         <tr>
-            <td>First Name <br>
-                <input type="text">
+            <td id="x">
+                <div>First Name</div>
+                <input placeholder="First Name" type="text">
             </td>
-            <td>Last Name <br>
-                <input type="text">
-            </td>
-        </tr>
-        <tr>
-            <td>Email Address <br>
-                <input type="text">
-            </td>
-            <td>Website Name <br>
-                <input type="text">
+            <td>
+                <div>Last Name</div>
+                <input placeholder="Last Name" type="text">
             </td>
         </tr>
         <tr>
-            <td colspan="2">Write your message <br>
-                <input type="text">
+            <td>
+                <div>Email Address</div>
+                <input placeholder="Email Address" type="text">
+            </td>
+            <td>
+                <div>Website Name</div>
+                <input placeholder="Website Name" type="text">
             </td>
         </tr>
         <tr>
-            <td colspan="2"><input type="submit"></td>
+            <td colspan="2">
+                <div>Write your message</div>
+                <textarea id="message">Write your message here
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="SUBMIT"></td>
         </tr>
     </table>
 </body>
