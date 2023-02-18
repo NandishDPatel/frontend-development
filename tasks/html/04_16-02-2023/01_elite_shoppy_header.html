@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+        h1{
+            margin: 10px auto;
+        }
+        table{
+            height: 80px;
+            width: 100%;
+            margin-top: 10px;
+            background-color: black;
+        }
+
+        #head1{
+            width: 30%;
+            background: black;
+            color: white;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        #head2{
+            width: 30%;
+            background: black;
+            color: white;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        #head1::before{
+            content: "";
+            top: 40px;
+            left: -100%;
+            height: 10px;
+            width: 100%;
+            background: green;
+            position: absolute;
+            transition: 1.5s;   
+        }
+        #head2::before{
+            content: "";
+            top: 40px;
+            left: -100%;
+            height: 10px;
+            width: 100%;
+            background: green;
+            position: absolute;
+            transition: 1.5s;
+        }
+        #head1:hover::before{
+            left: 0%;   
+        }
+        #head2:hover::before{
+            left: 0%;   
+        }
+    </style>
+</head>
+<body>
+    <h1>Header</h1>
+    <table border="0px">
+        <tr>
+            <td id="h1">
+                <div id="head1">HOME</div>
+            </td>
+            <td id="h2">
+                <div id="head2">ABOUT</div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<!-- https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/index.html?_gl=1*1af8f1t*_ga*MTA5MzkwMzg1MC4xNjc2NTIwOTc0*_ga_9HSZ46TKMQ*MTY3NjUyMDk3NC4xLjEuMTY3NjUyMTQ4MS4wLjAuMA..*_ga_EGV5GTJEP5*MTY3NjUyMDk3NC4xLjEuMTY3NjUyMTQ4MS4wLjAuMA..&_ga=2.93441113.510165329.1676520975-1093903850.1676520974 -->
+
+<!-- 1) Header
+2) shop now 
+3) images - cross hovers
+4) image -top down
+5) small icons-->

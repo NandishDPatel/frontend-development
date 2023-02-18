@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Icon</title>
+    <style>
+        .icon{
+            box-sizing: border-box;
+            height: 100px;
+            width: 100px;
+            margin: 20px auto;
+            background: pink;
+            position: relative;
+        }
+        .image{
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            height: 50px;
+            width: 50px;
+            background: url("https://img.icons8.com/ios-filled/256/css3.png");
+            background-size: 100% 100%;
+        }
+        .square{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            height: 0px;
+            width: 0px;
+            background-color: yellow;
+            transition: 1s;
+        }
+        .icon:hover .square{
+            height: 100px;
+            width: 100px;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Small Icon</h1>
+    <div class="icon">
+        <div class="square"></div>
+        <div class="image"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross Hovers</title>
+    <style>
+        h1{
+            background-color: aqua;
+        }
+        
+        .image{
+            height: 300px;
+            width: 500px;
+            margin: 10px auto;
+            background: url("https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_1.jpg");
+            background-size: 100% 100%;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            line-height: 300px;
+            font-size: 30px;
+            color: white;
+        }
+        span{
+            color: aquamarine;
+            font-size: 50px;
+        }
+        .image1::before{
+            content: "";
+            height: 300px;
+            width: 500px;
+            background: rgba(0,0,0,0.1);
+            position: absolute;
+            top: 300px;
+            left: -500px;
+            transition: 1s;
+        }
+        .image1::after{
+            content: "";
+            height: 300px;
+            width: 500px;
+            background: rgba(0,0,0,0.1);
+            position: absolute;
+            top: -300px;
+            left: 500px;
+            transition: 1s;
+        }
+        .image:hover .image1::before{
+            top: 0px;
+            left: 0px;
+        }
+        .image:hover .image1::after{
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cross Hovers</h1>
+    
+    <div class="image">
+        Flat <span>50% </span> OFF*
+        <div class="image1">
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!--  -->

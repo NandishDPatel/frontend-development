@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now</title>
+    <style>
+        h1{
+            background: pink;
+        }
+        .shopNow{
+            height: 50px;
+            width: 200px;
+            margin: 20px auto;
+            background-color: aqua;           
+            position: relative;
+            padding: auto;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            word-spacing: 5px;
+            letter-spacing: 3px;
+        }
+        .inside{
+            box-sizing: border-box;
+            height: 50px;
+            width: 200px;
+            background: transparent;
+            border: aqua solid 3px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            transition: 0.5s;
+        }
+        .shopNow:hover .inside{
+            height: 70px;
+            width: 220px;
+            top: -10px;
+            left: -10px;   
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Shop Now</h1>
+    <div class="shopNow">
+        Shop Now
+        <div class="inside">
+        </div>
+    </div>
+    
+</body>
+</html>
