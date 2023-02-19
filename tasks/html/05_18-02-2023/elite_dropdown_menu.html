@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Menu</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .main{
+            box-sizing: border-box;
+            height: 100px;
+            width: 100%;
+            background-color: aqua;
+            padding-top: 10px;
+            font-size: 25px;
+        }
+        li{
+            display: inline;
+            margin-left: 150px;   
+            background-color: pink;
+        }
+        #image{
+            height: 100%;
+            width: 50px;
+            background: url("https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/top2.jpg");
+            background-size: 100% 100%;
+        }
+        .about{
+            position: relative;
+        }
+        .dropdown{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0px;
+        }
+        .about:hover .dropdown{
+            display: inline-block;
+        }
+        td{
+            /* padding: 10px; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Drop Down Menu</h1>
+    <div class="main">
+        <ul>
+            <li class="list"><a href="">Home</a></li>
+            <li class="list about"><a href="">About</a>
+                
+                    <table class="dropdown" border="1px">
+                        <tr class="im">
+                            <td>item-1</td>
+                            <td>shoes-1</td>
+                            <td rowspan="5" id="image"></td>
+                        </tr>
+                        <tr>
+                            <td>item-2</td>
+                            <td>shoes-2</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>item-3</td>
+                            <td>shoes-3</td>
+                        </tr>
+                        <tr>
+                            <td>item-4</td>
+                            <td>shoes-4</td>
+                        </tr>
+                        <tr>
+                            <td>item-5</td>
+                            <td>shoes-5</td>
+                        </tr>
+                    </table>
+                
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
