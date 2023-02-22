@@ -11,14 +11,16 @@
             background: lightcoral;
         }
         .main{
+            box-sizing: border-box;
             margin: 100px auto;
             box-sizing: border-box;
             position: relative;
-            height: 500px;
+            height: 550px;
             width: 300px;
-            background: lightblue;
+            background: rgba(80, 182, 216, 0.564);
             font-size: 20px;
             color: white;
+            overflow: hidden;
         }
         .header{
             height: 150px;
@@ -65,10 +67,7 @@
             width: 90%;
         }
         .login{
-            box-sizing: border-box;
             text-align: center;
-            /* line-height: 80px; */
-            /* background: lightblue; */
             height: 80px;
             width: 100%;
         }
@@ -77,34 +76,34 @@
             width: 240px;
         }
         .footer{
-            /* background: lightgreen; */
             height: 70px;
             width: 100%;
             text-align: center;
-            /* line-height: 70px; */
         }
         .footsub{
             height: 40px;
             width: 120px;
         }
         .circle{
-            background: red;
+            background: rgba(255, 0, 0, 0.625);
             height: 100px;
             width: 100px;
             border-radius: 50%;
             position: absolute;
             top: -40px;
             left: -40px;
-            z-index: -1;
+            z-index: 1;
+            filter: blur(10px);
         }
         .square{
-            background: blue;
+            background: rgba(0, 0, 255, 0.403);
             height: 100px;
             width: 100px;
             position: absolute;
             bottom: -40px;
             right: -40px;
-            z-index: -1;
+            z-index: 1;
+            filter: blur(10px);
         }
     </style>
 </head>
