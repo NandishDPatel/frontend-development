@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            background: lightcoral;
+        }
+        .main{
+            margin: 100px auto;
+            box-sizing: border-box;
+            position: relative;
+            height: 500px;
+            width: 300px;
+            background: lightblue;
+            font-size: 20px;
+            color: white;
+        }
+        .header{
+            height: 150px;
+            width: 100%;
+            /* background: pink; */
+            text-align: center;
+            line-height: 150px;
+            
+        }
+        input{
+            height: 20px;
+        }
+        .username{
+            box-sizing: border-box;
+            /* background: green; */
+            height: 100px;
+            width: 90%;
+            padding-left: 25px;
+        }
+        .inusername{
+            /* background: blue; */
+            margin-bottom: 5px;
+        }
+        #email{
+            padding:5px 10px;
+            height: 15px;
+            width: 90%;
+        }
+        .password{
+            box-sizing: border-box;
+            /* padding: 0px 0px; */
+            padding-left: 25px;
+            /* position: absolute;
+            top: 450px; */
+            /* background: grey; */
+            height: 100px;
+            width: 97%;
+        }
+        .inpassword{
+            margin-bottom: 5px;
+        }
+        #inpass{
+            
+            width: 90%;
+        }
+        .login{
+            box-sizing: border-box;
+            text-align: center;
+            /* line-height: 80px; */
+            /* background: lightblue; */
+            height: 80px;
+            width: 100%;
+        }
+        #inlogin{
+            height: 40px;
+            width: 240px;
+        }
+        .footer{
+            /* background: lightgreen; */
+            height: 70px;
+            width: 100%;
+            text-align: center;
+            /* line-height: 70px; */
+        }
+        .footsub{
+            height: 40px;
+            width: 120px;
+        }
+        .circle{
+            background: red;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -40px;
+            left: -40px;
+            z-index: -1;
+        }
+        .square{
+            background: blue;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            bottom: -40px;
+            right: -40px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        
+        <div class="header"><h1>Login Here</h1></div>
+        <div class="username">
+            <div class="inusername">Username</div>
+            <input id="email" type="text" placeholder="Email or Phone">
+        </div>
+        <div class="password">
+            <div class="inpassword">Password</div>
+            <input id="inpass" type="text" placeholder="Password">
+        </div>
+        <div class="login">
+            <input id="inlogin" type="submit" value="Log In">
+        </div>
+        <div class="footer">
+            
+                <input class="footsub" type="submit" value="Google">
+            
+            
+                <input class="footsub" type="submit" value="Facebook">
+        </div>
+        <div class="circle"></div>
+        <div class="square"></div>
+    </div>
+</body>
+</html>

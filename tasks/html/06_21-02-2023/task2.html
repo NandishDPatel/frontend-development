@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            background: lightgray;
+        }
+        .phone{
+            height: 600px;
+            width: 300px;
+            background: rgb(91, 87, 87);
+            margin: 70px auto;
+            position: relative;
+            border-radius: 30px;
+        }
+        .header{
+            box-sizing: border-box;
+            height: 100px;
+            /* background: pink; */
+            padding-top: 20px;
+            display: flex;
+        }
+        .fa-search{
+            box-sizing: border-box;
+            margin-top: 22px;
+            margin-left: 30px;
+            background: rgb(155, 155, 155);
+            background-size: 100% 100%;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgb(78, 78, 78) inset,0 0 20px black ;
+        }
+        .searchbar{
+            height: 60px;
+            width: 70%;
+            /* background: palegreen; */
+        }
+        .search{
+            box-sizing: border-box;
+            height: 30px;
+            width: 90%;
+            margin-top: 15px;
+            margin-left: 40px;
+            /* background: lightslategray; */
+            border-radius: 20px;
+        }
+        input::placeholder{
+            background: rgb(104, 104, 104);
+            color: rgb(198, 196, 196);
+            box-shadow: 0px 0px 10px lightgrey inset,0 0 20px black ;
+        }
+        .back{
+            height: 60px;
+            width: 30%;
+            /* background: maroon; */
+        }
+        .shape{
+            box-sizing: border-box;
+            height: 200px;
+            /* background: green; */
+            text-align: center;
+            line-height: 200px;
+            display: flex;
+        }
+        .oround{
+            height: 180px;
+            width: 180px;
+            border-radius: 50%;
+            background: rgb(91, 87, 87);
+            box-shadow: 0px 0px 10px black inset,0 0 50px rgb(44, 43, 43) ;
+            margin: 10px auto;
+        }
+        .iround{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLGIaW4AugeR7LYIc-0r4yd2HdodrOQLXEvA&usqp=CAU");
+            background-size: 100% 100%;
+            margin: 17px auto;
+
+        }
+        hr{
+            border: solid 1px rgb(123, 122, 122);
+            margin: 0px;
+        }
+        .audio{
+            box-sizing: border-box;
+            height: 50px;
+            /* background: skyblue; */
+            padding-top: 10px;
+            display: flex;
+        }
+        .part1,.part3{
+            height: 30px;
+            width: 15%;
+            margin: 0px 10px;
+        }
+        .part1{
+            box-sizing: border-box;
+            font-size: 12px;
+            /* background: cadetblue; */
+            color: white;
+            padding: 10px;
+        }
+        .part3{
+            box-sizing: border-box;
+            /* background: chartreuse; */
+            font-size: 12px;
+            color: white;
+            padding: 10px;
+        }
+        .part2{
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTri_Qx2Ev7QAJQIbr21E1BfKCo3nv5KypThA&usqp=CAU");
+            background-size: 100% 100%;
+            border-radius: 20px;
+            height: 30px;
+            width: 50%;
+            margin: 0px 10px;
+        }
+        .footer{
+            height: 250px;
+            /* background: white; */
+            display: flex;
+            position: relative;
+        }
+        .fa{
+            color: rgb(194, 192, 192);
+        }
+        .oval1{
+            position: absolute;
+            height: 150px;
+            width: 50px;
+            background: rgb(91, 87, 87);
+            box-shadow: 0px 0px 10px lightgrey inset,0 0 20px black ;
+            top: 25px;
+            left: 15px;
+            border-radius: 30px;
+        }
+        .fa-stop{
+            margin-top: 20px;
+            margin-bottom: 15px;
+            margin-left: 10px;
+        }
+        .fa-pause-circle{
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+        .oval2{
+            position: absolute;
+            height: 150px;
+            width: 50px;
+            background: rgb(91, 87, 87);
+            box-shadow: 0px 0px 10px lightgrey inset,0 0 20px black ;
+            top: 25px;
+            right: 15px;
+            border-radius: 30px;
+        }
+        .fa-plus{
+            margin-top: 20px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+        }
+        .fa-minus{
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+        .oval3{
+            position: absolute;
+            display: flex;
+            height: 50px;
+            width: 150px;
+            background: rgb(91, 87, 87);
+            box-shadow: 0px 0px 10px lightgrey inset,0 0 20px black ;
+            top: 175px;
+            left: 75px;
+            border-radius: 30px;
+        }
+        .fa-backward{
+            margin-left: 15px;
+            margin-right: 20px;
+        }
+        .fa-forward{
+            margin-left: 15px;
+        }
+        .verticle{
+            box-sizing: border-box;
+            border: solid 1px rgb(123, 122, 122);
+            height: 50px;
+        }
+        
+        .pause{
+            position: absolute;
+            height: 120px;
+            width: 120px;
+            background: rgb(91, 87, 87);
+            box-shadow: 0px 0px 10px lightgrey inset,0 0 30px black ;
+            border-radius: 50%;
+            top: 38px;
+            left: 90px;
+        }
+        .triangle{
+            height: 70px;
+            width: 70px;
+            background:  rgb(194, 192, 192);
+            clip-path: polygon(0% 0%,100% 50%,0 100%);
+            margin-left: 35px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Mobile Phone</h1>
+    <div class="phone">
+        <div class="header">
+            <div class="searchbar">
+                <input class="search" type="text" placeholder="Search songs">
+            </div>
+            <div class="back">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="shape">
+            <div class="oround">
+                <div class="iround"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="audio"> 
+            <div class="part1">1:12</div>
+            <div class="part2"></div>
+            <div class="part3">4:42</div>
+        </div>
+        <hr>
+        <div class="footer">
+            <div class="oval1">
+                <i class="fa fa-stop fa-2x" aria-hidden="true"></i>
+                <hr>
+                <i class="fa fa-pause-circle fa-3x" aria-hidden="true"></i>
+            </div>
+            <div class="pause">
+                <div class="triangle"></div>
+            </div>
+            <div class="oval2">
+                <i class="fa fa-plus fa-3x" aria-hidden="true"></i>
+                <hr>
+                <i class="fa fa-minus fa-3x" aria-hidden="true"></i>
+            </div>
+            <div class="oval3">
+                <i class="fa fa-backward fa-3x" aria-hidden="true"></i>
+                <div class="verticle"></div>
+                <i class="fa fa-forward fa-3x" aria-hidden="true"></i>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLGIaW4AugeR7LYIc-0r4yd2HdodrOQLXEvA&usqp=CAU -->
