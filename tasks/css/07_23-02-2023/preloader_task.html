@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preloader Task</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            border-radius: 50%;
+        }
+        .div3{
+            box-sizing: border-box;
+            margin: 200px auto;
+            background: transparent;
+            height: 200px;
+            width: 200px;
+            padding: 15px;
+            border: 15px solid transparent;
+            border-top: solid pink 15px;
+            animation: clockwise 4s linear infinite;
+        }
+        .div2{
+            background: transparent;
+            height: 150px;
+            width: 150px;
+            padding: 15px;
+            border: 15px solid transparent;
+            border-top: solid red 15px;
+            animation: anticlockwise 2s linear infinite;
+        }
+        .div1{
+            background: transparent;
+            height: 100px;
+            width: 100px;
+            border: 15px solid transparent;
+            border-top: solid greenyellow 15px;
+            animation: clockwise 1s linear infinite;
+        }
+
+        @keyframes clockwise{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes anticlockwise{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Preloarder Task</h1>
+    <div class="div3">
+        <div class="div2">
+            <div class="div1"></div>
+        </div>
+    </div>
+</body>
+</html>

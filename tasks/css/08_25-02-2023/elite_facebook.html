@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 100px;
+            width: 100px;
+            background: olive;
+            margin: 100px auto;
+            position: relative;
+        }
+        .fa{
+            /* background: blueviolet; */
+            margin: 20px;
+        }
+        .inside1{
+            height: 100px;
+            width: 100px;
+            background: pink;
+            position: absolute;
+            z-index: 2;
+        }
+        .inside2{
+            height: 100px;
+            width: 100px;
+            background: black;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="inside1">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        </div>
+        <div class="inside2"></div>
+    </div>
+</body>
+</html>
