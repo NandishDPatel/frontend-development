@@ -7,12 +7,16 @@
     <title>Form-3</title>
     <style>
         body{
-            height: 100%;
+            height: 90vh;
             background: url("https://www.secretsofuniverse.in/wp-content/uploads/2020/05/Orion.jpg");
             background-size: 100% 100%;
             font-family:Arial, Helvetica, sans-serif;
             color: white;
             padding: 100px 500px;
+            margin: 0px;
+        }
+        .column{
+            padding: 0px;
         }
         #mainTable{
             height: 500px;
@@ -22,20 +26,17 @@
             height: 100%;
             box-sizing: border-box;
             width: 100%;
-            padding: 10px 10px;
+            margin: 0px;
             background: rgba(151, 138, 138, 0.5);
-           
         }
         #table2{
             height: 100%;
             width: 100%;
             background: linear-gradient(to right,rgba(203, 204, 203, 0.2),rgb(113, 117, 116)), url("https://images.unsplash.com/photo-1614732484003-ef9881555dc3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
             background-size: 100% 100%;
-            box-sizing: border-box;
         }
         #symbol{
             height: 100px;
-            width: 100%;
         }
 
         #image{
@@ -77,6 +78,10 @@
             box-sizing: border-box;
             padding-left: 75px;
         }
+        #join{
+            display: flex;
+            justify-content: center;
+        }
         /*Hover Section*/
         input[type="submit"]:hover{
             color: greenyellow;
@@ -84,9 +89,9 @@
     </style>
 </head>
 <body>
-    <table id="mainTable" border="0px">
+    <table id="mainTable">
         <tr>
-            <td>
+            <td class="column">
                 <table id="table1" border="0px">
                     <tr>
                         <td id="mission">Mission to Deep Space</td>
@@ -99,7 +104,7 @@
                     </tr>
                 </table>
             </td>
-            <td width="50%">
+            <td class="column" width="50%">
                 <table cellspacing="20" id="table2" border="0px">
                     <tr>
                         <td id="signUp">Sign Up</td>
@@ -114,7 +119,7 @@
                         <td id="emB"><input type="text" placeholder="Email" class="input"></td>
                     </tr>
                     <tr>
-                        <td><input type="submit" value="Join"></td>
+                        <td id="join"><input type="submit" value="Join"></td>
                     </tr>
                 </table>
             </td>

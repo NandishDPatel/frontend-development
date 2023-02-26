@@ -32,10 +32,14 @@
             color: rgba(0,0,0,0);
             transition: 1s;
         }
-        /* .header:hover{
-            background: rgb(133, 174, 73);
-        } */
-
+        .hoverdiv{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: skyblue;
+            height: 350px;
+            width: 100%;
+        }
         .cart{
             text-align: center;
             line-height: 50px;
@@ -89,7 +93,9 @@
 </head>
 <body>
     <h1>Top Down Hovers</h1>
+    
     <div class="topDown">
+        <div class="hoverdiv"></div>
         <div class="image">
         </div>
         <div class="header">

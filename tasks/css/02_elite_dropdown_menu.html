@@ -9,74 +9,79 @@
         body{
             margin: 0px;
         }
-        .main{
-            box-sizing: border-box;
-            height: 100px;
-            width: 100%;
-            background-color: aqua;
-            padding-top: 10px;
-            font-size: 25px;
+        .header{
+            position: relative;
+            background: rgb(108, 108, 165);
         }
         li{
-            display: inline;
-            margin-left: 150px;   
-            background-color: pink;
-        }
-        #image{
-            height: 100%;
-            width: 50px;
-            background: url("https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/top2.jpg");
-            background-size: 100% 100%;
-        }
-        .about{
-            position: relative;
-        }
-        .dropdown{
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0px;
-        }
-        .about:hover .dropdown{
+            font-size: 25px;
             display: inline-block;
+            padding: 10px;
+            margin-left: 200px;
+        }
+        .unvisible{
+            background: lightblue;
+            position: absolute;
+            top: 50px;
+            left: 530px;
+            display: none;
+        }
+        .unvisible1{
+            position: absolute;
+            top: 160px;
+            left: -130px;
+            background: lightcoral;
+            display: none;
         }
         td{
-            /* padding: 10px; */
+            padding: 10px;
+        }
+        #image{
+            height: 200px;
+            width: 400px;
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2H8V6NG7u6fLx9ghE_W2VP4_nhyT2WvNIeA&usqp=CAU");
+            background-size: 100% 100%;
+        }
+        .list:hover .unvisible{
+            display: block;
+        }
+        .table2:hover .unvisible1{
+            display: block;
         }
     </style>
 </head>
 <body>
     <h1>Drop Down Menu</h1>
-    <div class="main">
+    <div class="header">
         <ul>
-            <li class="list"><a href="">Home</a></li>
-            <li class="list about"><a href="">About</a>
-                
-                    <table class="dropdown" border="1px">
-                        <tr class="im">
-                            <td>item-1</td>
-                            <td>shoes-1</td>
-                            <td rowspan="5" id="image"></td>
-                        </tr>
-                        <tr>
-                            <td>item-2</td>
-                            <td>shoes-2</td>
-                            
-                        </tr>
-                        <tr>
-                            <td>item-3</td>
-                            <td>shoes-3</td>
-                        </tr>
-                        <tr>
-                            <td>item-4</td>
-                            <td>shoes-4</td>
-                        </tr>
-                        <tr>
-                            <td>item-5</td>
-                            <td>shoes-5</td>
-                        </tr>
-                    </table>
-                
+            <li><a href="">Home</a></li>
+            <li class="list"><a href="">About</a>
+                <table class="unvisible">
+                    <tr>
+                        <td>item</td>
+                        <td>item</td>
+                        <td id="image" rowspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td>item</td>
+                        <td>item</td>
+                    </tr>
+                    <tr>
+                        <td class="table2"><a href="">item</a>
+                            <table class="unvisible1">
+                                <tr>
+                                    <td>item</td>
+                                    <td>item</td>
+                                </tr>
+                                <tr>
+                                    <td>item</td>
+                                    <td>item</td>
+                                </tr>
+                            </table> 
+                        </td>
+                        <td>item</td>
+                    </tr>
+                </table>
             </li>
         </ul>
     </div>

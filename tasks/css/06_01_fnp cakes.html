@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNP Cake Website</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            height: 80vh;
+            background: lightgray;
+        }
+        .main{
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            margin: 100px 10px;
+            background: white;
+            box-shadow: 0px 0px 10px black,0 0 20px rgb(44, 106, 112) inset;
+        }
+        .header{
+            /* background: pink; */
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 20px;
+        }
+        .cakes{
+            font-size:30px;
+            font-weight: 700;
+        }
+        .view{
+            padding: 10px 20px;
+            background: #7d8035;
+            border-radius: 20px;
+            color: white;
+            box-shadow: 0px 0px 10px black;
+        }
+        .content{
+            /* background: blueviolet; */
+            display: flex;
+            width: 95%;
+            margin: 0px auto;
+        }
+        .x{
+            /* border: 3px solid; */
+            width: 25%;
+            /* background: gold; */
+            margin: 2px 10px;
+            padding: 20px 0px;
+        }
+        .img{
+            height: 200px;
+            border-radius: 50%;
+            background: white;
+            background-size: cover;
+            padding: 10px;
+            box-shadow: 0px 0px 20px black;
+        }
+        .innerimg{
+            height: 180px;
+            border-radius: 50%;
+            background: pink;
+            transition: 0.5s;
+        }
+        .img1{
+            background: url(https://www.fnp.com/assets/images/custom/new-desk-home/cakes/2022/Chocolate-Cakes.jpg);
+            background-size: contain;
+        }
+        .img2{
+            background: url("https://www.fnp.com/assets/images/custom/new-desk-home/cakes/2022/Butterscotch.jpg");
+            background-size: cover;
+        }
+        .img3{
+            background: url("https://www.fnp.com/assets/images/custom/new-desk-home/cakes/2022/Pineapple.jpg");
+            background-size: contain;
+        }
+        .img4{
+            background: url("https://www.fnp.com/assets/images/custom/new-desk-home/cakes/2022/Flowers-N-Cakes.jpg");
+            background-size: contain;
+        }
+        .dis{
+            padding: 20px 2px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 550;
+        }
+        .img:hover .innerimg {
+            transform: scale(1.05);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="cakes">Cakes</div>
+            <div class="view">View All</div>
+        </div>
+        <div class="content">
+            <div class="x cake1">
+                <div class="img">
+                    <div class="innerimg img1">
+                    </div>
+                </div>
+                <div class="dis">Chocolate Cakes</div>
+            </div>
+            <div class="x cake2">
+                <div class="img">
+                    <div class="innerimg img2"></div>
+                </div>
+                <div class="dis">
+                    Butterscotch Cakes
+                </div>
+            </div>
+            <div class="x cake3">
+                <div class="img">
+                    <div class="innerimg img3"></div>
+                </div>
+                <div class="dis">Pineapple Cakes</div>
+            </div>
+            <div class="x cake4">
+                <div class="img">
+                    <div class="innerimg img4"></div>
+                </div>
+                <div class="dis">Flower N Cakes</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- https://www.fnp.com/ -->
