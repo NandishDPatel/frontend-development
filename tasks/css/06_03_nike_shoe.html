@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Nike Shoe</title>
+    <style>
+        *{box-sizing: border-box;
+        border-radius: 20px;}
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            color: white;
+            background: linear-gradient(to right,rgb(74, 9, 104),rgb(227, 148, 224));
+        }
+        .main{
+            position: relative;
+            margin: 200px auto;
+            height: 400px;
+            width: 700px;
+            background: blue;
+        }
+        li{
+            display: inline-block;
+        }
+        .left{
+            position: absolute;
+            top: -20px;
+            width: 50%;
+            height: 440px;
+            background: linear-gradient(rgb(182, 138, 207),rgb(55, 53, 168));
+            padding: 20px;
+            /* border-radius: 20px; */
+        }
+        .right{
+            position: absolute;
+            right: 0px;
+            width: 50%;
+            height: 100%;
+            background: black;
+            border-radius: 0px 20px 20px 0px;
+            padding: 20px 40px;
+        }
+        .air1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+        }
+        .air2{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+        }
+        .men{
+            padding-top: 10px;
+            color: grey;
+        }
+        ul{
+            /* background: blue; */
+            padding-left: 0px;
+        }
+        .price{
+            font-weight: 700;
+            font-size: 20px;
+            padding-bottom: 30px;
+        }
+        .price li{
+            margin-right: 20px;
+        }
+        .price li:nth-child(2){
+            font-size: 15px;
+            font-weight: 500;
+            color: gray;
+        }
+        
+        .size li:nth-child(2){
+            margin-left: 30px;
+            /* padding: 5px 0px; */
+        }
+        .size li:nth-child(n+2){
+            color: gray;
+            margin-right: 15px;
+        }
+        .colour li{
+            margin-right: 20px;
+        }
+        .c{
+            height: 15px;
+            width: 15px;
+            background: transparent;
+            border-radius: 50%;
+        }
+        .red{
+            border: 4px solid red;
+        }
+        .blue{
+            border: 4px solid blue;
+        }
+        .pink{
+            border: 4px solid pink;
+        }
+        
+        .amount li{
+            margin-right: 10px;
+        }
+        .amount li:nth-child(2){
+            color: grey;
+        }
+        .amount .fa{
+            margin-top: 0px;
+            font-size: 8px;
+        }
+        .buy{
+            margin-top: 40px;
+            text-align: center;
+        }
+        .buy input{
+            height: 30px;
+            width: 150px;
+            border-radius: 20px;
+            border: none;
+            background: blue;
+            color: white;
+            box-shadow: 0px 0px 30px rgb(32, 14, 121) inset;
+        }
+        .dots{
+            position: absolute;
+            bottom: 50px;
+            left: 120px;
+            padding: 0px;
+        }
+        .dots li div{
+            border: none;
+            background: white;
+        }
+        .symbol{
+            position: absolute;
+            left: 50px;
+            /* background: lightblue; */
+            transform: rotate(-90deg);
+        }
+        .leftarrow{
+            color: lavender;
+            position: absolute;
+            top: 200px;
+            left: -20px;
+            z-index: 1;
+        }
+        .rightarrow{
+            color: lavender;
+            position: absolute;
+            top: 200px;
+            right: -20px;
+        }
+        .shoe{
+            position: absolute;
+            top: 100px;
+            left: -20px;
+            height: 200px;
+            width: 350px;
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2uDDr1HQKbZlsmNC6-va9kLY3RzgLubURmw&usqp=CAU");
+            background-size: 100% 100%;
+            transform: rotate(-30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="symbol"></div>
+            <div class="dots">
+                <ul class="colour">
+                    <li><div class="c red"></div></li>
+                    <li><div class="c pink"></div></li>
+                    <li><div class="c blue"></div></li>
+                </ul>
+            </div>
+        </div>   
+        <div class="right">
+            <div class="air1">NIKE AIR ZOOM</div>
+            <div class="air2">PEGASUS 33</div>
+            <div class="men">Men's Running Shoe</div>
+            <ul class="price">
+                <li>$ 220</li>
+                <li>$320</li>
+            </ul>
+            <ul class="size">
+                <li>Size</li>
+                <li>S</li>
+                <li>M</li>
+                <li>L</li>
+                <li>XL</li>
+                <li>XXL</li>
+            </ul>
+            <ul class="colour">
+                <li>Colour</li>
+                <li><div class="c red"></div></li>
+                <li><div class="c pink"></div></li>
+                <li><div class="c blue"></div></li>
+            </ul>
+            <ul class="amount">
+                <li>Amount</li>
+                <li><i class="fa fa-chevron-left" aria-hidden="true"></i> 3 <i class="fa fa-chevron-right" aria-hidden="true"></i></li>
+            </ul>
+            <div class="buy"><input type="button" value="BUY NOW"></div>
+        </div>
+        <div class="leftarrow">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </div>
+        <div class="rightarrow">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+        <div class="symbol">
+            <i class="fa fa-bolt fa-5x" aria-hidden="true"></i>
+        </div>
+        <div class="shoe"></div>
+        <div class="plus1"></div>
+        <div class="plus2"></div>
+        <div class="plus3"></div>
+    </div>
+</body>
+</html>
