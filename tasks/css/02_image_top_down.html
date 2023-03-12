@@ -9,14 +9,15 @@
         *{
             box-sizing: border-box;
         }
-        .main{
-            margin: 100px auto;
+        /*===========================*/
+        .product_image{
+            /* margin: 100px auto; */
             height: 500px;
             width: 300px;
             /* background: black; */
             box-shadow: 0px 0px 20px black;
         }
-        .top{
+        .product_top{
             position: relative;
             height: 350px;
             /* background: blue; */
@@ -28,7 +29,7 @@
             backface-visibility: hidden;
             transition: 2s;
         }
-        .back{
+        .product_back{
             position: absolute;
             top: 25px;
             left: 25px;
@@ -41,13 +42,13 @@
             background: url("https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m8.jpg");
             
         }
-        .top:hover .image{
+        .product_top:hover .image{
             transform: rotateY(180deg);
         } 
-        .top:hover .back{
+        .product_top:hover .product_back{
             transform: rotateY(0deg);
         } 
-        .quick{
+        .product_quick{
             text-align: center;
             position: absolute;
             width: 250px;
@@ -59,12 +60,12 @@
             z-index: 1;
             
         }
-        .quick1{
+        .product_quick1{
             background: transparent;
             padding: 10px;
             transition: 0.5s;
         }
-        .bottom{
+        .product_bottom{
             margin: 0px;
             height: 150px;
             /* background: purple; */
@@ -81,7 +82,7 @@
             font-size: 20px;
             color: black;
         }
-        .cart{
+        .product_cart{
             position: relative;
             margin: 0px 80px;
             padding: 5px;
@@ -102,39 +103,39 @@
             z-index: 2;
             transition: 1s;
         }
-        .cart:hover .innercart{
+        .product_cart:hover .innercart{
             position: absolute;
             left: 18px;
             transform: scale(1.5);
             width: 75%;
         }
-        .top:hover .quick{
+        .product_top:hover .product_quick{
             position: absolute;
             top: 290px;
             left: 25px;
             background: black;
             color: white;
         }
-        .quick:hover .quick1{
+        .product_quick:hover .product_quick1{
             background: rgb(65, 222, 159);
         }
     </style>
 </head>
 <body>
     <h1>Top Down Hovers</h1>
-    <div class="main">
-        <div class="top">
-            <div class="quick"><div class="quick1">QUICK VIEW</div></div>
+    <div class="product_image">
+        <div class="product_top">
+            <div class="product_quick"><div class="product_quick1">QUICK VIEW</div></div>
             <div class="image"></div>
-            <div class="back"></div>
+            <div class="product_back"></div>
         </div>
-        <div class="bottom">
+        <div class="product_bottom">
             <h2>Party Men's Blazer</h2>
             <ul>
                 <li>$260.99</li>
                 <li><strike>$390.71</strike></li>
             </ul>
-            <div class="cart">
+            <div class="product_cart">
                 ADD TO CART
                 <div class="innercart"></div>
             </div>

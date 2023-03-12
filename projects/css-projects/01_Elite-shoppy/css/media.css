@@ -1,0 +1,39 @@
+@media (max-width:500px){
+    .header .h{width: 100%;}
+
+    .subheader .sub{width: 100%;}
+
+
+    .menu .submenu .list ul{width:0%;display: none;}
+    .menu .submenu .cart{width: 40%;margin: auto;}
+
+    /* .banner{background-size: contain;} */
+    .banner h1{width: 100%;font-size: 15px;margin: auto;}
+    .banner h1 span{font-size: 25px;}
+    .banner .shopNow{width: 20%;}
+
+    .twoImages{padding: 30px;}
+    .twoImages .image1{width: 100%;margin-bottom: 10px;}
+    .twoImages .image2{width: 100%;}
+    
+    .saveBanner{width: 100%;height: 100%;padding: 0px;margin: 0px;}
+    .saveBanner .x{width: 100%;}
+    .saveBanner .image{width: 100%;}
+    /* .saveBanner .information{width: 100%;} */
+
+    .trending .inside .header{width: 100%;font-size: 35px;}
+    .trending .inside .image1{width: 100%;margin: auto;}
+    .trending .inside .image2{width: 190%;}
+    .trending .inside .image3{width: 190%;}
+
+    .full .x{width: 100%;}
+    .full .x .offer{width: 100%;}
+
+    /* newarrivals section */
+
+    .backgroundClip .shopNow{width: 30%;}
+
+    .icons .icon{width: 100%;margin: 5px 30px;}
+
+    .footer .f{width: 100%;margin: 0px 50px;}
+}

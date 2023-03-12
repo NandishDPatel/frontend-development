@@ -1,0 +1,776 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+i{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 50px;
+    text-align: center;
+    color: white; 
+}
+.header i{
+    color: #2fdab8;
+    margin-right: 5px;
+}
+.header .h{
+    font-size: 13px;
+    border-right: 3px solid grey;
+}
+.header .blank1{
+    height: 100%;
+    width: 16.66%;
+    /* background: blueviolet; */
+}
+.header .signIn{
+    height: 100%;
+    width: 16.66%;
+    /* background: blue; */
+}
+.header .signUp{
+    height: 100%;
+    width: 16.66%;
+    /* background: blueviolet; */
+}
+.header .call{
+    height: 100%;
+    width: 16.66%;
+    /* background: blue; */
+}
+.header .mail{
+    height: 100%;
+    width: 16.66%;
+    /* background: blueviolet; */
+}
+.header .blank2{
+    height: 100%;
+    width: 16.66%;
+    /* background: blue; */
+}
+/*------------- Subheader Starts ---------------------*/
+.subheader{
+    /* height: 100px; */
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.subheader .sub{
+    line-height: 100px;
+    text-align: center;
+}
+.subheader .search{
+    width: 35%;
+    /* background: grey; */
+}
+.subheader .search input{
+    height: 50px;
+    width: 50%;
+    border: 1px solid lightgrey;
+    padding-left: 10px;
+}
+.subheader .search i{
+    color: white;
+    background: #2fdab8;
+    padding: 17px;
+}
+.subheader .company{
+    width: 30%;
+    /* background: green; */
+}
+.subheader .company{
+    font-size: 40px;
+}
+.subheader .company span{
+    background: black;
+    color: white;
+    padding: 10px;
+    font-weight: 700;
+}
+.subheader .company p{
+    position: relative;
+    display: inline;
+}
+.subheader .company i{
+    position: absolute;
+    top: 40px;
+    left: -5px;
+    font-size: 15px;
+    color: #2fdab8;
+}
+.subheader .sharing{
+    width: 35%;
+    letter-spacing: 4px;   
+}
+.subheader .sharing i{
+    background: black;
+    padding: 15px;
+    color: white;
+}
+.subheader .sharing a i:hover{
+    color: #000;
+    background: #2fdab8;
+}
+.subheader .sharing .fa-facebook-f{
+    background: #3b5998;
+}
+.subheader .sharing .fa-twitter{
+    background: #1da1f2;
+}
+.subheader .sharing .fa-instagram{
+    background: #c32aa3;
+}
+.subheader .sharing .fa-linkedin{
+    background: #0a66c2;
+}
+/* ---------- Menu Start ------------------ */
+.menu{
+    /* height: 80px; */
+    background: black;
+}
+.menu .submenu{
+    height: 100%;
+    margin: auto;
+    width: 70%;
+    /* background: blue;    */
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu .submenu .list{
+    height: 100%;
+    width: 80%;
+    /* background: skyblue; */
+}
+.menu .submenu .list ul{
+    margin-bottom: 10px;
+    /* overflow: hidden; */
+}
+.menu .submenu .list li{
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    color: #fff;
+    padding: 30px;
+    margin-right: 40px;
+    overflow:hidden;
+}
+.menu .submenu .list li::before{
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border-bottom: 5px solid #2fdab8;
+    transition: 1s;
+}
+.menu .submenu .list li:hover::before{
+    left: 0%;
+    /* width: 100%; */
+}
+.menu .submenu .cart{
+    width: 20%;
+    background: #2fdab8;
+    text-align: center;
+    line-height: 80px;
+}
+.menu .submenu .cart i{
+    background: rgba(211, 211, 211, 0.601);
+    padding: 10px;
+    transition: 1s;
+}
+.menu .submenu .cart i:hover{
+    background: #fff;
+}
+.banner{
+    height: 500px;
+    background: url(../images/banner1.jpg);
+    background-size: 100% 100%;
+    text-align: center;
+    padding-top: 150px;
+}
+.banner h1{
+    /* position: absolute; */
+    margin: 0px 350px;
+    /* background: blue; */
+    padding: 20px;
+    /* line-height: 500px; */
+    color: #fff;
+    letter-spacing: 10px;
+    font-weight: 500;
+    font-size: 40px;
+}
+.banner h1 span{
+    font-weight: 800;
+    font-size: 50px;
+    color: #2fdab8;
+}
+.banner h3{
+    margin: 40px auto;
+    /* padding: 20px; */
+    /* background: green; */
+    letter-spacing: 10px;
+    color: #ffb900;
+}
+.banner .shopNow{
+    display: flex;
+    justify-content: center;
+    background: #2fdab8;
+    line-height: 30px;
+    width: 8%;
+    color: #fff;
+    margin: auto;
+    position: relative;
+}
+.banner .shopNow::before{
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    line-height: 30px;
+    border: none;
+    border: 2px solid #2fdab8;
+    height: 100%;
+    width: 100%;
+    transition: 2s;
+}
+.banner .shopNow:hover::before{
+    transform: scale(1.2,1.5);
+}
+.banner .circles{
+    /* background: darkblue; */
+    padding: 50px 0px;
+}
+.banner .circles .fa-circle{
+    font-size: 10px;
+    margin: 10px;
+    color: white;
+}
+/* ---------- Two Images Start ------------------ */
+.twoImages{
+    /* height: 400px; */
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+.twoImages .img{
+    position: relative;
+    /* background-size: 100% 100%; */
+    margin: auto;
+}
+.twoImages .img h1{
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    color: #fff;
+    word-spacing: 10px;
+    /* background-clip: 10px; */
+}
+.twoImages .img h1 span{
+    color: red;
+}
+.twoImages .img .newArrivals{
+    height: 100%;
+    width: 100%;
+    padding: 120px 0px 0px 190px;
+    font-size: 22px;
+    letter-spacing: 10px;
+    background: transparent;
+    opacity: 0;
+    color: #fff;
+    border: 5px solid #fff;
+    transform: translate(-15px,0px);
+    transition: 2s;
+}
+.twoImages .img .newArrivals:hover{
+    transform: translate(0px,0px);
+    opacity: 1;
+
+}
+.twoImages .image1{
+    height: 300px;
+    width: 600px;
+    background: url(../images/image1.jpg);
+    background-size: 100% 100%;   
+    border: 20px solid rgba(255,255,255,.54);
+    background-origin: border-box; 
+    background-position: -20px 0px;
+    transition: 2s;
+    /* margin: auto; */
+}
+.twoImages .image1:hover{
+    background-position: 0px 0px;
+}
+.twoImages .image2{
+    height: 300px;
+    width: 600px;
+    background: url(../images/image2.jpg);
+    background-size: 100% 100%;
+    border: 20px solid rgba(255,255,255,.54);
+    background-origin: border-box;
+    background-position: -20px 0px;
+    transition: 2s;
+}
+.twoImages .image2:hover{
+    background-position: 0px 0px;
+}
+/*------------ Save Banner Starts ------------------*/
+.saveBanner{
+    background: bisque;
+    display: flex;
+    flex-wrap: wrap;
+}
+.saveBanner .x{
+    width: 50%;
+}
+.saveBanner .image{
+    background: url(../images/save_banner.jpg);
+    background-size: cover;
+}
+.saveBanner .information{
+    background: #2fdab8;
+    padding: 20px 100px 20px 0px;
+}
+.saveBanner .information .information1{
+    background: #fff;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+.saveBanner .information1 h1 span{
+    color: red;
+}
+.saveBanner .information1 .info{
+    margin: 50px 0px;
+    font-size: 18px;
+    line-height: 30px;
+}
+.saveBanner .logos{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.saveBanner .logos .logo{
+    margin: auto;
+    padding: 20px;
+}
+.saveBanner .logos .logo i{
+    color: #2fdab8;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.saveBanner .logos .logo h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.saveBanner .logos .logo h4{
+    font-weight: 200;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+/* ---------- Trending Section Starts ------------------ */
+.trending .inside{
+    width: 80%;
+    margin: auto;
+}
+.trending .inside .header{
+    background: white;
+    color: #000;
+    line-height: 100px;
+    justify-content: center;
+    font-size: 40px;
+}
+.trending .inside .header span{
+    font-weight: 700;
+    margin-right: 30px;
+}
+.trending .inside .images{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.trending .inside .images .image1{
+    background: url(../images/trending_1.jpg);
+    background-size: 100% 100%;
+    border: 20px solid rgba(255,255,255,.54);
+    background-origin: border-box;
+    background-position: -20px 0px;
+    transition: 2s;
+    height: 600px;
+    width: 570px;
+    margin: 10px;
+}
+.trending .inside .images .image1:hover{
+    background-position: 0px 0px;
+}
+.trending .inside .images .x{
+    position: relative;
+    padding: 30px;
+}
+.trending .inside .images .x span{
+    color: red;
+    font-weight: 900;
+}
+.trending .inside .images .sale{
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    top: 100px;
+    right: 40px;
+}
+.trending .inside .images .hidden{
+    position: absolute;
+    padding: 130px 10px 50px 320px;
+    color: #fff;
+    border: 5px solid #fff;
+    letter-spacing: 10px;
+    transform: translate(-20px,0px);
+    transition: 2s;
+    opacity: 0;
+}
+.trending .inside .images .hidden:hover{
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+.trending .inside .images .image1 .hidden{
+    padding: 130px 0px 370px 320px;
+}
+.trending .inside .images .rightSide{
+    /* background: #000; */
+    height: 100%;
+    width: 50%;
+}
+.trending .inside .images .image2{
+    background: url(../images/trending_2.jpg);
+    background-size: 100% 100%;
+    border: 20px solid rgba(255,255,255,.54);
+    background-origin: border-box;
+    background-position: -20px 0px;
+    transition: 2s;
+    height: 295px;
+    margin: 10px;
+}
+.trending .inside .images .image2:hover{
+    background-position: 0px 0px;
+}
+.trending .inside .images .image3{
+    background: url(../images/trending_3.jpg);
+    background-size: 100% 100%;
+    border: 20px solid rgba(255,255,255,.54);
+    background-origin: border-box;
+    background-position: -20px 0px;
+    transition: 2s;
+    height: 295px;
+    margin: 10px;
+}
+.trending .inside .images .image3:hover{
+    background-position: 0px 0px;
+}
+/* ---------- Two Images Full Banner Starts ------------------ */
+.fullBanner{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+.fullBanner .x{
+    height: 400px;
+    width: 50%;
+    position: relative;
+    border: none;
+    overflow: hidden;
+}
+.fullBanner .x::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    transform: translate(-100%,100%);
+    transition: 2s;
+}
+.fullBanner .x:hover::before{
+    transform: translate(0%,0%);
+}
+.fullBanner .x::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    transform: translate(100%,-100%);
+    transition: 2s;
+}
+.fullBanner .x:hover::after{
+    transform: translate(0%,0%);
+}
+.fullBanner .x .offer{
+    font-size: 40px;
+    letter-spacing: 10px;
+    position: absolute;
+    line-height: 400px;
+    left: 200px;
+    color: #fff;
+}
+.fullBanner .x .offer a{
+    color: #fff;
+    text-decoration: none;
+}
+.fullBanner .x .offer span{
+    color: #2fdab8;
+    font-weight: 900;
+}
+.fullBanner .image1{
+    background: url(../images/full_image1.jpg);
+    background-size: 100% 100%;
+    
+}
+.fullBanner .image2{
+    background: url(../images/full_image2.jpg);
+    background-size: 100% 100%;
+}
+/*----------- new arrivals section-------------*/
+.newArrivals{
+    background: lightblue;
+    /* height: 500px; */
+    /* width: 70%; */
+    margin: auto;
+    text-align: center;
+}
+.newArrivals .subheading{
+    font-size: 40px;
+    padding: 50px 0px;
+}
+.newArrivals .subheading span{
+    font-weight: 800;
+}
+.newArrivals .submenu{
+    display: flex;
+    justify-content: center;
+}
+.newArrivals .title{
+    width: 63%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.newArrivals .title .section{
+    padding: 10px 0px;
+    /* width: 80%; */
+    margin-bottom: 20px;
+}
+.newArrivals .submenu .section{
+    border: 2px solid;
+    font-weight: 700;
+    background: coral;
+}
+
+.newArrivals .row .section{
+    margin-bottom: 20px;
+}
+.newArrivals .row .section .image{
+    padding: 20px;
+    
+}
+.newArrivals .row .section .image:hover{
+    animation: rotation 4s linear infinite;
+}
+@keyframes rotation{
+    0%{transform: rotateY(0deg);}
+    50%{transform: rotateY(360deg);}
+    100%{transform: rotateY(0deg);}
+}
+.newArrivals .row .section .footer{
+    justify-content: center;
+    position: relative;
+}
+.newArrivals .row .section .footer h3{
+    color: rgb(223, 61, 61);
+    font-weight: 400;
+}
+
+/*--------- Background Clip Start -------------*/
+.backgroundClip{
+    height: 300px;
+    background: url(../images/background_clip.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    text-align: center;
+    padding-top: 100px;
+    color: #fff;
+}
+.backgroundClip h1{
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.backgroundClip h1 span{
+    color: #2fdab8
+}
+.backgroundClip .shopNow{
+    position: relative;
+    background: #2fdab8;
+    width: 10%;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.backgroundClip .shopNow::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 3px solid #2fdab8;
+    top:0;
+    left: 0;
+    background: transparent;
+    box-sizing: border-box;
+    transition: 2s;
+}
+.backgroundClip .shopNow:hover::before{
+    transform: scale(1.1,1.5);
+}
+/*------------ icons start ------------*/
+.icons{
+    /* height: 200px; */
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+.icons .icon{
+    
+    border: 2px solid black;
+    width: 22%;
+    margin: auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.icons .icon .symbol i{
+    background: #000;
+    color: #fff;
+    padding: 30px;
+    /* display: inline-block; */
+}
+/* .icons .icon .symbol i:hover{
+    background: #2fdab8;
+} */
+.icons .icon .info{
+    padding-left: 20px;
+}
+.icons .info h3{
+    color: #2fdab8;
+    font-size: 15px;
+    margin: 8px 0px;
+    display: inline-block;
+}
+.icons .icon .info span{
+    font-size: 10px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+/*---------- Footer Starts -------------*/
+.footer{
+    /* height: 600px; */
+    background: black;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+.footer .f{
+    width: 25%;
+    padding: 20px;
+}
+.footer .eliteShoppy h1{
+    margin-bottom: 20px;
+}
+.footer .eliteShoppy li{
+    display: inline-block;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+.footer .eliteShoppy li i:hover{
+    color: #000;
+    background: #2fdab8;
+}
+.footer .logos .fa-facebook-f{
+    background: #0a66c2;
+    padding: 15px;
+}
+.footer .logos .fa-twitter{
+    background: #1da1f2;
+    padding: 15px;
+}
+.footer .logos .fa-instagram{
+    background: #c32aa3;
+    color: white;
+    padding: 15px;
+}
+.footer .logos .fa-linkedin{
+    background: #3b5998;
+    color: white;
+    padding: 15px;
+}
+.footer h2{
+    font-size: 20px;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+}
+.footer .information .list li{
+    padding: 5px 0px;
+    list-style-type: none;
+}
+.footer .information .list a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer .store .row{
+    display: flex;
+}
+.footer .store .row .icon{
+    padding: 15px 20px;
+    justify-content: center;
+}
+.footer .store .row .content{
+    padding: 10px 0px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.footer .store .row .content h3{
+    /* padding: 10px 0px; */
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 15px;
+}
+.footer .store .row .info{
+    /* padding: 10px 0px; */
+    color: gray;
+    font-size: 15px;
+}
+.footer .store .row .content .info span{
+    color: #2fdab8;
+}
+
+.footer .posts .row{
+    display: flex;
+}
+.footer .posts .row .img{
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+}

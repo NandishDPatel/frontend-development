@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eye Opening</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+      }
+      .main {
+        background: black;
+        height: 100vh;
+      }
+      .eyebrow {
+        /* background: pink; */
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding-top: 50px;
+      }
+      .upper {
+        background: #fff;
+        height: 200px;
+        width: 20px;
+        transform: rotate(60deg);
+        margin: 0px 200px;
+      }
+      .rightEyebrow{
+        transform: rotate(-60deg);
+      }
+      .eye{
+        /* background: yellow; */
+        display: flex;
+        justify-content: center;
+      }
+      .eyeball{
+        position: relative;
+        height: 300px;
+        width: 150px;
+        background: white;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 10px 100px;
+      }
+      .eyeball::before{
+        content: "";
+        background: black;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        animation: updown 5s linear infinite;
+      }
+      .cornea{
+        position: absolute;
+        bottom: 50px;
+        /* left: 10px; */
+        height: 100px;
+        width: 50px;
+        border-radius: 50%;
+        background: black;
+        animation: sliding 5s linear infinite;
+      }
+
+      @keyframes sliding{
+        0%{transform: translateX(0);}
+        50%{transform: translateX(200%);}
+        100%{transform: translateX(0%);}
+      }
+      @keyframes updown{
+        0%{transform: translateY(0%);}
+        50%{transform: translateY(-100%);}
+        100%{transform: translateY(0%);}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="eyebrow">
+        <div class="upper leftEyebrow"></div>
+        <div class="upper rightEyebrow"></div>
+      </div>
+      <div class="eye">
+        <div class="eyeball leftEye">
+          <div class="cornea"></div>
+        </div>
+        <div class="eyeball rightEye">
+          <div class="cornea"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
