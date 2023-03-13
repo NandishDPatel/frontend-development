@@ -29,7 +29,7 @@
 .header .submenu li{
   display: inline-block;
   padding: 20px;
-  margin-right: 5px;
+  margin-right: 2px;
   font-size: 18px; 
 }
 .header .submenu li a{
@@ -70,13 +70,14 @@
   /* grid-template-rows: 7fr 3fr; */
 }
 .content .photo{
-  background: greenyellow;
+  background: url(../images/full_banner.jpg);
+  background-size: 100% 100%;
   color: #fff;
   text-align: center;
   padding-top: 300px;
 }
 .content .photo h1{
-  background: blue;
+  /* background: blue; */
   width: 25%;
   margin: auto;
   font-weight: 200;
@@ -89,7 +90,7 @@
 }
 .content .photo h4{
   padding: 30px 0px 60px 0px;
-  background: cyan;
+  /* background: cyan; */
 }
 .content .photo .button{
   padding: 30px 20px;
@@ -283,27 +284,44 @@ padding: 20px 0px 0px 50px;
   margin: auto;
 }
 .treatment .heading{
-  font-size: 50px;
-  padding: 100px;
+  font-size: 60px;
+  font-weight: 400;
+  padding: 50px;
   text-align: center;
 }
 .treatment .row{
-  background: pink;
+  /* background: pink; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 50px;
 }
 .treatment .row .div{
-  background: yellow;
-  padding: 30px;
+  /* background: yellow; */
+  padding: 0px 30px;
   text-align: center;
 }
 .treatment .row .div .image{
   background: blue;
-  height: 500px;
+  height: 400px;
   /* padding: 40px; */
   margin: auto;
   position: relative;
+}
+.treatment .row .div .img1{
+  background: url(../images/treatment_01.webp);
+  background-size: 100% 100%;
+}
+.treatment .row .div .img2{
+  background: url(../images/treatment_02.webp);
+  background-size: 100% 100%;
+}
+.treatment .row .div .img3{
+  background: url(../images/treatment_03.webp);
+  background-size: 100% 100%;
+}
+.treatment .row .div .img4{
+  background: url(../images/treatment_04.webp);
+  background-size: 100% 100%;
 }
 .treatment .row .div .image h4{
   position: absolute;
@@ -312,6 +330,11 @@ padding: 20px 0px 0px 50px;
   background: green;
   padding: 10px;
   color: #fff;
+}
+.treatment .row .div .content{
+  background: #fff;
+  padding-bottom: 20px;
+  width: 100%;
 }
 .treatment .row .div .content h1{
   font-weight: 500;
@@ -336,14 +359,15 @@ padding: 20px 0px 0px 50px;
 /*------------------- Treatment Section Ends --------------*/
 /*------------------- Big Photo Section Ends --------------*/
 .bigPhoto{
-  background: yellow;
+  background: url(../images/recovery_banner.jpg);
+  background-size: 100% 100%;
   width: 90%;
   padding: 50px;
   margin: auto;
 }
 .bigPhoto .heading{
   padding: 10px 0px;
-  background: purple;
+  /* background: purple; */
   width: 30%;
 }
 .bigPhoto .heading h1{
@@ -357,54 +381,114 @@ padding: 20px 0px 0px 50px;
   border-bottom: 2px solid;
 }
 .bigPhoto .content{
+  position: relative;
+  /* background: aqua; */
+  /* padding-right: 100px; */
   margin-top: 50px;
-  width: 40%;
+  /* width: 40%; */
   margin-left: 20px;
   display: grid;
   grid-template-columns: 1fr 4fr;
 }
 .bigPhoto .content .playBtn{
+  position: absolute;
+  top: 0px;
+  left: 0px; 
   height: 70px;
   width: 70px;
   border-radius: 50%;
-  background: pink;
+  /* background: pink; */
 }
-.bigPhoto .content .info{
-  color: #fff;
+.bigPhoto .content .playBtn i{
+  padding: 5px;
+  color: #ff6900;
 }
-.bigPhoto .content .info h2{
+.bigPhoto .content .playBtn i:hover{
+  color: green;
+}
+.bigPhoto .content .header{
+  /* background: yellow; */
+  position: absolute;
+  top: 0px;
+  left: 100px; 
+  width: 40%;
+  display: grid;
+  grid-template-rows: 3fr 2fr;
+  /* padding-right: 600px; */
+}
+.bigPhoto .content .header h2{
+  position: absolute;
+  /* left: 100px; */
   font-size: 35px;
   margin-bottom: 10px;
   font-weight: 300;
+  color: #fff;
 }
-.bigPhoto .content .info h4{
+.bigPhoto .content .header h4{
+  position: absolute;
+  text-align: left;
+  top: 50px;
   font-size: 18px;
+  padding-right: 40px;
   font-weight: 300;
+  color: #fff;
 }
 .bigPhoto .content .footer{
+  position: relative;
   margin-top: 200px;
+  margin-left: 50px;
   /* margin-left: 250px; */
-  background: lightblue;
-  /* height: 200px; */
+  /* background: lightblue; */
+  height: 200px;
+  /* width: 100%; */
   display: grid;
   grid-template-columns: 1fr 4fr 4fr;
   /* width: 700px; */
 }
 .bigPhoto .footer .info{
   /* width: 60%; */
-  background: coral;
+  /* position: absolute; */
+  /* top: 0px; */
+  padding: 50px 20px;
+  width: 200px;
+  /* background: coral; */
+  color: #fff;
+}
+.bigPhoto .footer .info i{
+  color: #fff;
+  margin-top: 10px;
+  margin-left: 25px;
 }
 .bigPhoto .content .footer .image{
+  position: relative;
+  top: 0px;
+  left: 100px;
   height: 150px;
   width: 400px;
   border: 2px solid;
   margin-left: 50px;
 }
+.bigPhoto .content .footer .img1{
+  background: url(../images/recovery_small_01.jpg);
+  background-size: 100% 100%;
+}
+.bigPhoto .content .footer .img2{
+  background: url(../images/recovery_small_02.jpg);
+  background-size: 100% 100%;
+}
+.bigPhoto .content .footer .playBtn{
+  font-size: 10px;
+  top: 40px;
+  left: 10px;
+}
+.bigPhoto .content .footer .playBtn:hover{
+  color: green;
+}
 /*------------------- Big Photo Section Ends --------------*/
 /*------------------- Rehabilation Starts --------------*/
 .rehabilitation{
   width: 80%;
-  background: gray;
+  /* background: gray; */
   margin: auto;
   padding: 50px;
 }
@@ -416,16 +500,16 @@ padding: 20px 0px 0px 50px;
   font-weight: 400;
 }
 .rehabilitation .row{
-  padding: 0px 100px;
+  padding: 0px 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: coral;
+  /* background: coral; */
   margin-bottom: 50px;
 }
 .rehabilitation .row .division{
   background: lightgrey;
-  margin-right: 20px;
-  padding: 30px;
+  margin: 0px 50px;
+  padding: 20px 30px;
   display: grid;
   grid-template-columns: 8fr 2fr;
 }
@@ -457,16 +541,18 @@ padding: 20px 0px 0px 50px;
 .aboutCenter{
   width: 90%;
   margin: auto;
-  background: greenyellow;
+  /* background: greenyellow; */
   padding-top: 30px;
 }
 .aboutCenter .header {
-  background: yellow;
+  /* background: yellow; */
  text-align: right;
 }
 .aboutCenter .header h1{
   width: 300%;
-  font-size: 50px;
+  padding-top: 100px;
+  font-size: 60px;
+  font-weight: 400;
 }
 .aboutCenter .content{
   position: relative;
@@ -494,10 +580,22 @@ padding: 20px 0px 0px 50px;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .aboutCenter .content .imageSlider .image{
-  background: blue;
+  background: black;
   /* border: 2px solid; */
   margin: 10px;
   margin-left: 20px;
+}
+.aboutCenter .content .imageSlider .img1{
+  background: url(../images/about_01.png);
+  background-size: 100% 100%;
+}
+.aboutCenter .content .imageSlider .img2{
+  background: url(../images/about_02.png);
+  background-size: 100% 100%;
+}
+.aboutCenter .content .imageSlider .img3{
+  background: url(../images/about_03.png);
+  background-size: 100% 100%;
 }
 .aboutCenter .content .info{
   position: absolute;
@@ -534,14 +632,15 @@ padding: 20px 0px 0px 50px;
 .news{
   width: 80%;
   margin: auto;
-  background: pink;
+  /* background: pink; */
   text-align: center;
   padding-top: 50px;
   padding-bottom: 100px;
 }
 .news h1{
-  font-size: 40px;
+  font-size: 60px;
   padding-bottom: 20px;
+  font-weight: 400;
 }
 .news .row{
   display: grid;
@@ -557,6 +656,9 @@ padding: 20px 0px 0px 50px;
   margin: 10px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+.news .row .section .image img{
+  width: 365px;
 }
 .news .row .section .content{
   background: lightgray;
@@ -579,6 +681,9 @@ text-align: left;
 font-size: 30px;
 font-weight: 200;
 padding: 0px 40px;
+}
+.news .row .section .content h1:hover{
+  color: green;
 }
 .news .row .section .content h3{
 text-align: left;
@@ -619,14 +724,18 @@ padding: 50px 200px;
   color: #fff;
   font-size: 50px;
   text-align: left;
-  background: yellow;
+  /* background: yellow; */
   font-weight: 300;
 }
 .footer .top li{
+  padding: 20px 0px;
+  width: 150px;
   display: inline-block;
-  background: coral;
-  padding: 40px 60px;
-  margin: 40px 5px;
+  /* background: cornflowerblue; */
+  /* width: 20%; */
+  /* height: 50px; */
+  /* padding: 10px; */
+  /* margin: 40px 5px; */
   text-align: center;
 }
 .footer .bottom{
@@ -641,7 +750,7 @@ padding: 50px 200px;
 }
 .footer .bottom .left .part{
   padding-top: 80px;
-  background: bisque;
+  /* background: bisque; */
 }
 .footer .bottom .left .part .company{
   display: grid;
