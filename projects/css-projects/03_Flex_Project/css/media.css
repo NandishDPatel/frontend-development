@@ -4,19 +4,30 @@
     .navigation .submenu li{width: 100%;text-align: center;padding: 10px;margin:5px;}
     .navigation .button{width: 100%;text-align: center;}
 
-    .header .content .leftSide{width: 100%;padding: 0px;}
-    .header .content .leftSide h1{width: 100%;font-size: 30px;}
-    .header .content .leftSide h3{width: 100%;font-size: 30px;}
-    .header .content .rightside{width: 100%;}
+    .header .content{width: 100%;padding: 0px;}
+    .header .content .leftSide{width: 100%;}
+    .header .content .leftside h1{width:400px;font-size: 23px;margin: 20px auto;line-height: 40px;}
+    .header .content .leftside h3{width: 400px;font-size: 20px;}
+    .header .content .buttons .btn{margin:20px auto;width: 200px;}
+    .header .content .rightside{width: 600px;}
 
+    .templets{width: 100%;padding: 20px;}
+    .templets h1{padding: 10px;font-size: 20px;}
+    .templets .row .tmp{width: 100%;}
 
+    .courseLayout .layouts .lyt{width: 100%;}
+    .courseLayout h3{font-size: 20px;}
+    .courseLayout h2{font-size: 25px;}
 
-    .courseLayout .layouts .lyt{width: 50%;}
+    .features h3{margin-bottom: 20px;}
+    .features .stickers .row{padding: 0px 20px;}
+    .features .stickers .row .item{width: 50%;}
+    .features .stickers .row .item .image{padding: 20px 50px;height: 80%;}
+    .features .stickers .row .item h4{line-height: 20px;}
 
-
-    /* .features .stickers .row .item{width: 200%;}
-    .features .stickers .row .item h4{line-height:30px; width:  100%;padding: 0px;} */
-
+    .innerPages h3 {font-size: 20px;padding: 30px 0px 0px 10px;}
+    .innerPages h2{font-size: 25px;padding: 0px;margin: 10px;}
+    .innerPages .slider .photo{width: 50%;}
 
     .questions .content .que{width: 90%;font-size: 10px;}
 
