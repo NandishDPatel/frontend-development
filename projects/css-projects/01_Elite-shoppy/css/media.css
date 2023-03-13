@@ -7,7 +7,6 @@
     .menu .submenu .list ul{width:0%;display: none;}
     .menu .submenu .cart{width: 40%;margin: auto;}
 
-    /* .banner{background-size: contain;} */
     .banner h1{width: 100%;font-size: 15px;margin: auto;}
     .banner h1 span{font-size: 25px;}
     .banner .shopNow{width: 20%;}
@@ -16,20 +15,27 @@
     .twoImages .image1{width: 100%;margin-bottom: 10px;}
     .twoImages .image2{width: 100%;}
     
-    .saveBanner{width: 100%;height: 100%;padding: 0px;margin: 0px;}
     .saveBanner .x{width: 100%;}
-    .saveBanner .image{width: 100%;}
-    /* .saveBanner .information{width: 100%;} */
+    .saveBanner .information{padding: 20px;}
+    .saveBanner .information1 h1{font-size: 25px;}
 
     .trending .inside .header{width: 100%;font-size: 35px;}
-    .trending .inside .image1{width: 100%;margin: auto;}
+    .trending .inside .image1{width: 100%;}
     .trending .inside .image2{width: 190%;}
     .trending .inside .image3{width: 190%;}
+    .trending .inside .images .hidden{padding: 130px 10px 50px 90px;}
+    .trending .inside .images .image1 .hidden{
+        padding: 130px 10px 350px 100px;
+    }
 
-    .full .x{width: 100%;}
-    .full .x .offer{width: 100%;}
+    .fullBanner .x{width: 100%;}
+    .fullBanner .x .offer{font-size: 30px;left: 40px;}
 
-    /* newarrivals section */
+    /* men_content section */
+    .men_content4{width: 100%;}
+    /* .men_content4 .heading{margin: auto;} */
+    .r1,.r2,.r3{width: 50%;}
+
 
     .backgroundClip .shopNow{width: 30%;}
 
