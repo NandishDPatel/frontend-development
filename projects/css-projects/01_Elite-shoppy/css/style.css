@@ -545,12 +545,7 @@ i{
 .men_content4{
     /* height: 100%; */
     padding: 30px 0px;
-    /* width: 80%; */
-    /* background-color: brown; */
-    /* margin: auto; */
     display: grid;
-    /* grid-template-columns: repeat(auto-fit,300px); */
-    /* box-shadow: none; */
 }
 .men_content4 .heading{
     margin: 20px auto;
@@ -619,11 +614,6 @@ i{
     padding: 10px;
     transition: 0.5s;
     /* color: pink; */
-}
-.product_bottom{
-    margin: 0px;
-    /* height: 150px; */
-    /* background: purple; */
 }
 .product_bottom h2{
     margin: 0px;

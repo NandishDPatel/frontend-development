@@ -4,12 +4,11 @@
     .navigation .submenu li{width: 100%;text-align: center;padding: 10px;margin:5px;}
     .navigation .button{width: 100%;text-align: center;}
 
-    .header .content{width: 100%;padding: 0px;}
-    .header .content .leftSide{width: 100%;}
-    .header .content .leftside h1{width:400px;font-size: 23px;margin: 20px auto;line-height: 40px;}
-    .header .content .leftside h3{width: 400px;font-size: 20px;}
-    .header .content .buttons .btn{margin:20px auto;width: 200px;}
-    .header .content .rightside{width: 600px;}
+    
+
+    .header  .leftside {width: 100%;}
+    .header  .rightside {width: 100%;}
+
 
     .templets{width: 100%;padding: 20px;}
     .templets h1{padding: 10px;font-size: 20px;}

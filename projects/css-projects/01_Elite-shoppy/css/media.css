@@ -33,9 +33,12 @@
 
     /* men_content section */
     .men_content4{width: 100%;}
-    /* .men_content4 .heading{margin: auto;} */
-    .r1,.r2,.r3{width: 50%;}
-
+    .r1,.r2,.r3{grid-template-columns: 1fr 1fr;}
+    .product_back{width: 80%;}
+    .product_quick{width: 80%;}
+    .product_bottom h2{font-size: 20px;}
+    .product_bottom li{margin: 20px 10px;}
+    .product_cart{width:80%;margin: 10px 20px;padding: 5px;}
 
     .backgroundClip .shopNow{width: 30%;}
 
