@@ -5,10 +5,10 @@
     .navigation .button{width: 100%;text-align: center;}
 
     
-
-    .header  .leftside {width: 100%;}
-    .header  .rightside {width: 100%;}
-
+    .topContent{padding: 40px 10px;}
+    .topContent .leftside{width: 100%;}
+    .topContent .buttons .btn{padding:20px;margin: 0px 25px;}
+    .topContent  .rightside {width: 600px;position: static;}
 
     .templets{width: 100%;padding: 20px;}
     .templets h1{padding: 10px;font-size: 20px;}
